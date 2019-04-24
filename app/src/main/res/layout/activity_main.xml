@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+   <LinearLayout
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="60dp">
+
+      <Button
+          android:text="选择应用"
+          android:id="@+id/bt_select"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent" />
+
+      <ImageView
+          android:id="@+id/app_img"
+          android:layout_width="60dp"
+          android:layout_height="match_parent" />
+
+      <TextView
+          android:id="@+id/app_name"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+
+   </LinearLayout>
+
+   <LinearLayout
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="60dp">
+
+      <EditText
+          android:gravity="center"
+          android:id="@+id/et_proxy_address"
+          android:hint="address"
+          android:layout_width="0dp"
+          android:layout_weight="2"
+          android:layout_height="match_parent" />
+
+      <EditText
+          android:gravity="center"
+          android:id="@+id/et_proxy_port"
+          android:hint="port"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="match_parent" />
+
+   </LinearLayout>
+
+
+   <Button
+       android:id="@+id/bt_start"
+       android:text="start"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+
+   <android.support.v7.widget.RecyclerView
+       android:id="@+id/rv_apps"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
+
+
+</LinearLayout>
